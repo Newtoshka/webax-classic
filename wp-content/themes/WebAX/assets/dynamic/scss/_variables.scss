@@ -1,0 +1,60 @@
+/* RWD */
+$tablet :992px;
+$pc: 1360px;
+$full-hd: 1920px;
+$uhd: 3840px;
+
+$global-width: min(calc(320px + ((1vw - 3.6px) * 88)), 1197px);
+$global-width--small: min(max(320px, calc(20rem + ((1vw - 3.2px) * 47.1875))), 1075px);
+
+/* colors */
+$white: #fff;
+$black: #000;
+$action: #E30613;
+$action-active: #47e932;
+$accent: #F7F7F7;
+$accent-active: #FFB800;
+$gray: #707070;
+$complementary-1: #ebebeb;
+$complementary-2: #F7F7F7;
+$complementary-3: #af9dff;
+
+/* fonts */
+$font-family-main: "Montserrat", sans-serif;
+$font-size-small: 1rem;
+$font-size-normal: 1.2rem;
+$font-size-medium: 1.5rem;
+$font-size-big: 2rem;
+$font-size-bigger: 3rem;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+
+$line-height: 1.2;
+
+
+html {
+    font-size: 58%;
+    line-height: $line-height;
+    
+    @media(min-width: $tablet) {
+        font-size: 60%;
+    }
+
+    @media(min-width: $pc) {
+        font-size: 62.5%;
+    }
+
+    @media(min-width: $full-hd) {
+        font-size: 100%;
+    }
+
+    @media(min-width: $uhd) {
+        font-size: 150%;
+    }
+
+}

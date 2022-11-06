@@ -1,0 +1,402 @@
+
+/* theme atomic classes */
+/* resets */
+ul.list-reset,
+ol.list-reset,
+.list-reset-inside ul,
+.list-reset-inside ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a.link-reset,
+.link-reset-inside a {
+    font: inherit;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* screen readers */
+.visually_hidden,
+.visually_hidden_focusable:not(:focus):not(:active) {
+    /* hides from eye view, but remains visible for screen readers */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+/* colors */
+.color- {
+    &white {
+        color: $white;
+    }
+
+    &black {
+        color: $black;
+    }
+
+    &action {
+        color: $action;
+    }
+
+    &action-active {
+        color: $action-active;
+    }
+
+    &accent {
+        color: $accent;
+    }
+
+    &accent-active {
+        color: $accent-active;
+    }
+
+    &complementary- {
+        &1 {
+            color: $complementary-1;
+        }
+
+        &2 {
+            color: $complementary-1;
+        }
+
+        &3 {
+            color: $complementary-1;
+        }
+    }
+}
+
+/* backgrounds */
+.background- {
+    &white {
+        background-color: $white;
+    }
+
+    &black {
+        background-color: $black;
+    }
+
+    &action-active {
+        background-color: $action-active;
+    }
+
+    &accent {
+        background-color: $accent;
+    }
+
+    &accent-active {
+        background-color: $accent-active;
+    }
+
+    &complementary- {
+        &1 {
+            background-color: $complementary-1;
+        }
+
+        &2 {
+            background-color: $complementary-1;
+        }
+
+        &3 {
+            background-color: $complementary-1;
+        }
+    }
+}
+
+/* fonts */
+/* fonts-sizes */
+.font-size {
+    &-small {
+        font-size: $font-size-small;
+    }
+
+    &-normal {
+        font-size: $font-size-normal;
+    }
+
+    &-medium {
+        font-size: $font-size-medium;
+    }
+
+    &-big {
+        font-size: $font-size-big;
+    }
+
+    &-bigger {
+        font-size: $font-size-bigger;
+    }
+}
+
+/* fonts-weights */
+.font-weight {
+    &-light {
+        font-weight: $font-weight-regular;
+    }
+
+    &-regular {
+        font-weight: $font-weight-regular;
+    }
+
+    &-medium {
+        font-weight: $font-weight-medium;
+    }
+
+    &-semibold {
+        font-weight: $font-weight-semibold;
+    }
+
+    &-bold {
+        font-weight: $font-weight-regular;
+    }
+
+    &-extrabold {
+        font-weight: $font-weight-extrabold;
+    }
+}
+
+.cont {
+    width: $global-width;
+    max-width: 100%;
+
+    &--small {
+        width: $global-width--small;
+        max-width: 100%;
+    }
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+/* layout */
+.inline {
+    display: inline;
+}
+
+.inline_block {
+    display: inline-block;
+}
+
+.inline_flex {
+    display: inline-flex;
+}
+
+.inline_grid {
+    display: inline-grid;
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+/* margin */
+
+.m-0 {
+    margin: 0;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.mx-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ml-0 {
+    margin-left: 0;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.mr-0 {
+    margin-right: 0;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+.my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-auto {
+    margin-bottom: auto;
+}
+
+/* padding */
+.p-0 {
+    padding: 0;
+}
+
+.p-auto {
+    padding: auto;
+}
+
+.px-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.px-auto {
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+
+.pl-auto {
+    padding-left: auto;
+}
+
+.pr-0 {
+    padding-right: 0;
+}
+
+.pr-auto {
+    padding-right: auto;
+}
+
+.py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.py-auto {
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+.pt-auto {
+    padding-top: auto;
+}
+
+.pb-0 {
+    padding-bottom: 0;
+}
+
+.pb-auto {
+    padding-bottom: auto;
+}
+
+/* text */
+
+.text- {
+    &uppercase {
+        text-transform: uppercase;
+    }
+
+    &lowercase {
+        text-transform: lowercase;
+    }
+
+    &capitalize {
+        text-transform: capitalize;
+    }
+
+    &center {
+        text-transform: center;
+    }
+
+    &left {
+        text-transform: left;
+    }
+
+    &right {
+        text-transform: right;
+    }
+}
+
+/* box shadow */
+
+.box-shadow {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.aspect_ratio {
+    position: relative;
+}
+
+$aspect_ratio-y: 25rem;
+$aspect_ratio-x: 25rem;
+.aspect_ratio::before {
+    content: "";
+    display: block;
+    padding-bottom: calc($aspect_ratio-y / $aspect_ratio-x * 100%);
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.aspect_ratio>* {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    object-fit: cover;
+}
